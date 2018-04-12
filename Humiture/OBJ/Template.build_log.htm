@@ -1,0 +1,157 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: haijian chen, chen, LIC=HN0DY-I1DZE-KPZZY-IHRNN-UGX9P-9T7Z4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\A毕设\NB-IoT开发\NB_IoT\NBIOT_EVB\例程\Humiture\USER\Humiture.uvprojx
+Project File Date:  11/13/2017
+
+<h2>Output:</h2>
+Rebuild target 'Template'
+compiling main.c...
+main.c(97): warning:  #223-D: function "delay_init" declared implicitly
+        delay_init();            //延时函数初始化
+main.c(100): warning:  #223-D: function "Init_USART2" declared implicitly
+        Init_USART2(9600);
+main.c(103): warning:  #223-D: function "BC95_Test_Demo" declared implicitly
+        BC95_Test_Demo();
+main.c(111): warning:  #223-D: function "delay_ms" declared implicitly
+                delay_ms(1000);          
+main.c: 4 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_md.s...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling led.c...
+compiling timer.c...
+compiling bc95.c...
+..\HARDWARE\src\bc95.c(51): warning:  #223-D: function "USARTx_printf" declared implicitly
+        USARTx_printf(USART2,"%s\r\n",cmd);
+..\HARDWARE\src\bc95.c(57): warning:  #223-D: function "delay_ms" declared implicitly
+                        delay_ms(20);
+..\HARDWARE\src\bc95.c(82): warning:  #223-D: function "usart_send_str" declared implicitly
+                        usart_send_str(USART1,"等待模块上电 \r\n");
+..\HARDWARE\src\bc95.c(84): warning:  #223-D: function "delay_ms" declared implicitly
+                delay_ms(1000);
+..\HARDWARE\src\bc95.c(95): warning:  #223-D: function "USARTx_printf" declared implicitly
+                                USARTx_printf(USART1,"设置为自动模式成功！\r\n");
+..\HARDWARE\src\bc95.c(98): warning:  #223-D: function "delay_ms" declared implicitly
+                        delay_ms(1000);
+..\HARDWARE\src\bc95.c(116): warning:  #223-D: function "USARTx_printf" declared implicitly
+                USARTx_printf(USART1,"重启模块！\r\n");
+..\HARDWARE\src\bc95.c(125): warning:  #223-D: function "delay_ms" declared implicitly
+                                delay_ms(1000);
+..\HARDWARE\src\bc95.c(152): warning:  #223-D: function "USARTx_printf" declared implicitly
+                        USARTx_printf(USART1,"附网、注网成功！r\n");
+..\HARDWARE\src\bc95.c(160): warning:  #223-D: function "USARTx_printf" declared implicitly
+                                        USARTx_printf(USART1,"附网成功!\r\n");
+..\HARDWARE\src\bc95.c(165): warning:  #223-D: function "USARTx_printf" declared implicitly
+                                        USARTx_printf(USART1,"正在附网...\r\n");
+..\HARDWARE\src\bc95.c(174): warning:  #223-D: function "USARTx_printf" declared implicitly
+                                        USARTx_printf(USART1,"注网成功！\r\n");
+..\HARDWARE\src\bc95.c(181): warning:  #223-D: function "USARTx_printf" declared implicitly
+                                        USARTx_printf(USART1,"正在注网...\r\n");
+..\HARDWARE\src\bc95.c(187): warning:  #223-D: function "delay_ms" declared implicitly
+                delay_ms(500);
+..\HARDWARE\src\bc95.c(192): warning:  #223-D: function "USARTx_printf" declared implicitly
+                        USARTx_printf(USART1,"附网、注网失败！\r\n");
+..\HARDWARE\src\bc95.c(215): warning:  #223-D: function "myatoi" declared implicitly
+                socket_id = (uint8_t)myatoi(data);
+..\HARDWARE\src\bc95.c(216): warning:  #223-D: function "USARTx_printf" declared implicitly
+                USARTx_printf(USART1,"Socket创建成功，句柄ID--> %d！\r\n",socket_id);
+..\HARDWARE\src\bc95.c(219): warning:  #223-D: function "USARTx_printf" declared implicitly
+        USARTx_printf(USART1,"Socket创建失败，已经创建或端口被占用！\r\n");
+..\HARDWARE\src\bc95.c(250): warning:  #223-D: function "USARTx_printf" declared implicitly
+                USARTx_printf(USART1,"发送数据--> %s！\r\n",ptr);       
+..\HARDWARE\src\bc95.c(229): warning:  #177-D: variable "len" was declared but never referenced
+        char *buf,b[200],*len;
+..\HARDWARE\src\bc95.c(447): warning:  #223-D: function "atoi" declared implicitly
+        len = atoi((char *)Dat);
+..\HARDWARE\src\bc95.c(450): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+        StrToHex(pDat,Dat);
+..\HARDWARE\src\bc95.c(450): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+        StrToHex(pDat,Dat);
+..\HARDWARE\src\bc95.c(451): warning:  #223-D: function "USARTx_printf" declared implicitly
+        USARTx_printf(USART1," \r\n%s","Rev Dat: ");
+..\HARDWARE\src\bc95.c(444): warning:  #177-D: variable "i" was declared but never referenced
+        uint16_t i, len;
+..\HARDWARE\src\bc95.c(481): warning:  #223-D: function "delay_ms" declared implicitly
+                        delay_ms(1000);
+..\HARDWARE\src\bc95.c(499): warning:  #225-D: the format string ends before this argument
+                                sprintf(sub,"%.5f",g_sht2x_param.TEMP_HM,buf);
+..\HARDWARE\src\bc95.c(501): warning:  #225-D: the format string ends before this argument
+                                sprintf(sub2,"%.5f",g_sht2x_param.HUMI_HM,buf);
+..\HARDWARE\src\bc95.c(487): warning:  #550-D: variable "p" was set but never used
+                                char buf[100]={0},buf_len[4]={0},*p,sub[10]={0};
+..\HARDWARE\src\bc95.c(532): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                                        if(BC95_check_ack(RecvSignal))
+..\HARDWARE\src\bc95.c(539): warning:  #223-D: function "USARTx_printf" declared implicitly
+                                                        USARTx_printf(USART2,"%s\r\n",AT_NSORF);
+..\HARDWARE\src\bc95.c(544): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                                        else if (BC95_check_ack(RealSingal))
+..\HARDWARE\src\bc95.c(546): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                                                RecvGPRSData(usart2_rcvd_buf,GPRSRecvBuffer);
+..\HARDWARE\src\bc95.c(466): warning:  #177-D: variable "k" was declared but never referenced
+        uint8_t k, ret,len;
+..\HARDWARE\src\bc95.c(466): warning:  #177-D: variable "ret" was declared but never referenced
+        uint8_t k, ret,len;
+..\HARDWARE\src\bc95.c(467): warning:  #550-D: variable "start_tick" was set but never used
+     u32  tick = 0,start_tick=0;
+..\HARDWARE\src\bc95.c: 36 warnings, 0 errors
+compiling SHT2x.c...
+linking...
+Program Size: Code=11808 RO-data=1068 RW-data=100 ZI-data=2020  
+"..\OBJ\Template.axf" - 0 Error(s), 40 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\A毕设\NB-IoT开发\NB_IoT\NBIOT_EVB\例程\Humiture\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
